@@ -5,7 +5,6 @@ This project is for **educational and research purposes only**. Flagged provider
 
 A Jupyter Notebook + Plotly Dash project for exploring and detecting potential fraud patterns in the **2026 DOGE/HHS Medicaid provider spending dataset**, focused on the state of Virginia.
 
-Special thanks to the DOGE. Data is incredibly clean, a rare thing. 
 ---
 
 ## 📋 Table of Contents
