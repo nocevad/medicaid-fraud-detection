@@ -1,5 +1,7 @@
-# 🏥 Medicaid Fraud Detection — Ohio
+# 🏥 Medicaid Fraud Detection — Virginia
 ### HHS / DOGE Data Release Analysis
+
+This project is for **educational and research purposes only**. Flagged providers are **statistical anomalies**, not confirmed fraud cases. No conclusions should be drawn about any specific provider without further investigation by qualified professionals.
 
 A Jupyter Notebook + Plotly Dash project for exploring and detecting potential fraud patterns in the **2026 DOGE/HHS Medicaid provider spending dataset**, focused on the state of Ohio.
 
@@ -23,13 +25,13 @@ A Jupyter Notebook + Plotly Dash project for exploring and detecting potential f
 In **February 2026**, HHS (via DOGE) released an unprecedented **227+ million row dataset** of Medicaid provider spending covering years **2018–2024**. The data includes billing provider NPIs, procedure codes (HCPCS), claim counts, recipient counts, and total paid amounts.
 
 This project:
-- Downloads and loads the **Ohio** subset of that data
+- Downloads and loads the **Virginia** subset of that data
 - Stores it in a **local MySQL database**
 - Runs **4 fraud detection algorithms** against it
 - Presents findings in an **interactive Plotly Dash dashboard**
 
 **Primary data source:** https://opendata.hhs.gov/datasets/medicaid-provider-spending  
-**Ohio pre-parsed file:** https://getmedicaiddata.com
+**Virginia pre-parsed file:** https://getmedicaiddata.com
 
 ---
 
@@ -42,7 +44,7 @@ medicaid-fraud-detection/
 ├── requirements.txt            ← All Python dependencies
 ├── config.ini.example          ← Template for your MySQL credentials
 ├── config.ini                  ← YOUR credentials (never committed)
-├── data/                       ← Drop your Ohio CSV here (never committed)
+├── data/                       ← Drop your Virginia CSV here (never committed)
 │   └── .gitkeep                ← Keeps the empty folder in Git
 ├── notebooks/
 │   └── medicaid_fraud_analysis.ipynb   ← Main analysis notebook
@@ -80,27 +82,27 @@ CREATE DATABASE medicaid_fraud;
 ```
 The notebook will handle creating all tables automatically.
 
-### 5. Download the Ohio Data
+### 5. Download the Virginia Data
 See the next section ↓
 
 ---
 
 ## 📥 How to Download the Data
 
-The Ohio CSV is available from a third-party site that pre-parsed the full HHS dataset by state and enriched it with provider name/address data from the NPPES NPI Registry.
+The Virginia CSV is available from a third-party site that pre-parsed the full HHS dataset by state and enriched it with provider name/address data from the NPPES NPI Registry.
 
 1. Go to **https://getmedicaiddata.com**
-2. Scroll down to find **"Download Ohio File"**
+2. Scroll down to find **"Download Virginia File"**
 3. Click the Google Drive link — it will download a `.zip` file
 4. **Unzip** the file — you'll get a `.csv` file inside
-5. **Rename** that CSV to `ohio_medicaid.csv`
+5. **Rename** that CSV to `VA_medicaid.csv`
 6. **Move** it into the `data/` folder in this project
 
 > ⚠️ The `data/` folder is in `.gitignore` — your data file will never be accidentally pushed to GitHub.
 
-**Can't find Ohio yet?** The site is uploading states in batches. If Ohio isn't listed yet:
+**Can't find Virginia yet?** The site is uploading states in batches. If Virginia isn't listed yet:
 - You can download the **full 10GB national file** from https://opendata.hhs.gov/datasets/medicaid-provider-spending and the notebook will filter it to Ohio for you.
-- Or check back at getmedicaiddata.com — Ohio is a large state and should be available soon.
+- Or check back at getmedicaiddata.com — Virginia is a large state and should be available soon.
 
 ---
 
@@ -113,7 +115,7 @@ jupyter notebook medicaid_fraud_analysis.ipynb
 
 Run cells **top to bottom**. The notebook will:
 1. Verify your data file exists
-2. Load and profile the Ohio data
+2. Load and profile the Virginia data
 3. Connect to MySQL and create tables
 4. Load data into the database
 5. Run all 4 fraud detection algorithms
