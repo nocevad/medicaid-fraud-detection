@@ -3,7 +3,7 @@
 
 This project is for **educational and research purposes only**. Flagged providers are **statistical anomalies**, not confirmed fraud cases. No conclusions should be drawn about any specific provider without further investigation by qualified professionals.
 
-A Jupyter Notebook + Plotly Dash project for exploring and detecting potential fraud patterns in the **2026 DOGE/HHS Medicaid provider spending dataset**, focused on the state of Ohio.
+A Jupyter Notebook + Plotly Dash project for exploring and detecting potential fraud patterns in the **2026 DOGE/HHS Medicaid provider spending dataset**, focused on the state of Virginia.
 
 ---
 
@@ -101,7 +101,7 @@ The Virginia CSV is available from a third-party site that pre-parsed the full H
 > ⚠️ The `data/` folder is in `.gitignore` — your data file will never be accidentally pushed to GitHub.
 
 **Can't find Virginia yet?** The site is uploading states in batches. If Virginia isn't listed yet:
-- You can download the **full 10GB national file** from https://opendata.hhs.gov/datasets/medicaid-provider-spending and the notebook will filter it to Ohio for you.
+- You can download the **full 10GB national file** from https://opendata.hhs.gov/datasets/medicaid-provider-spending and the notebook will filter it to Virginia for you.
 - Or check back at getmedicaiddata.com — Virginia is a large state and should be available soon.
 
 ---
