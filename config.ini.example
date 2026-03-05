@@ -1,0 +1,19 @@
+# =============================================================
+# config.ini.example
+#
+# HOW TO USE:
+#   1. Copy this file and rename the copy to: config.ini
+#   2. Fill in your actual MySQL password below
+#   3. config.ini is in .gitignore so it will NEVER be uploaded
+#      to GitHub — your credentials stay safe on your machine.
+#
+# NEVER rename THIS file (config.ini.example) — it stays in
+# the repo so other users know what credentials are needed.
+# =============================================================
+
+[mysql]
+host     = localhost
+user     = root
+password = YOUR_PASSWORD_HERE
+database = medicaid_fraud
+port     = 3306

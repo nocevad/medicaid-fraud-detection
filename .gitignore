@@ -1,0 +1,45 @@
+# =============================================================
+# .gitignore for medicaid-fraud-detection
+# This file tells Git which files to NEVER commit to GitHub.
+# Anything listed here stays on your local machine only.
+# =============================================================
+
+# --- Credentials (NEVER commit your real config) ---
+config.ini
+
+# --- Data files (too large for GitHub, and may contain PII) ---
+data/*.csv
+data/*.zip
+data/*.tsv
+
+# --- Python cache files (auto-generated, not needed in repo) ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# --- Jupyter Notebook checkpoints (auto-saved drafts) ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Virtual environments ---
+venv/
+env/
+.env/
+ENV/
+
+# --- OS-specific files ---
+.DS_Store          # Mac
+Thumbs.db          # Windows
+desktop.ini        # Windows
+
+# --- IDE/Editor files ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs ---
+*.log
+logs/
